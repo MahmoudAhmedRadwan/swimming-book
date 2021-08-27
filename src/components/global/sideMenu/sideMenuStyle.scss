@@ -49,7 +49,6 @@
                     }
                 }
                 .profile-image-item {
-                    width: 100px;
                     height: 100px;
                     border-radius: 50px;
                     border: 3px solid #fff;
@@ -111,4 +110,60 @@
             }
         }
     }
+}
+// shrinked menu design
+.side-menu{
+    &.shrinked-menu {
+        width:  50px;
+        .brand-name {
+            .brand-letters {
+                display: none;
+            }
+        }
+        // PROFILE SECTION
+        .menu-profile {
+            .user-info {
+                .profile-image-section {
+                    .profile-image-icon {
+                        display: none;
+                    }
+                    .profile-image-item {
+                        flex: 0 0 40px;
+                        height: 40px;
+                        border-width: 2px;
+                    }
+                }
+                .user-description {
+                    display: none;
+                }
+            }
+        }
+        // NAVIGATION SIDE MENU
+        .menu-navigation-list {
+            .menu-items {
+                .menu-item {
+                    position: relative;
+                    span {
+                        display: none;
+                    }
+                    .expaned-menu-itmes {
+                        position: absolute;
+                        width: 220px;
+                        top: 0;
+                        left: -225px;
+                        background: #33414e;
+                        .expanded-menu-item {
+                            span {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// should be im main 
+li::marker {
+    display: none;
 }
