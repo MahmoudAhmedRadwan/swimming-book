@@ -6,10 +6,10 @@ import ProfileImg from './avatar.png'
 class SideMenu extends React.Component {
     render(){
         return(
-            <div className="side-menu">
+            <div className="side-menu shrinked-menu">
                 {/* BRAND NAME */}
                 <h2 className="brand-name">
-                    Swimming
+                   <span className="brand-letters">wimming</span> S
                 </h2>
                 {/* PROFILE SECTION */}
                 <div className="menu-profile">
