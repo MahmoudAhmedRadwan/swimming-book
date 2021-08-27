@@ -1,0 +1,73 @@
+.side-menu {
+    width: 220px;
+    background: #33414e;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    h2 {
+        color: #fff;
+        justify-content: center;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background: #e34724;
+    }
+    .menu-profile {
+        .user-info {
+            background: #2d3945;
+            padding: 15px 0;
+            .profile-image-section {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-bottom: 10px;
+                .profile-image-icon {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #fff;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        border-color: #ccc;
+                        svg {
+                            path {
+                                color: #ccc;
+                            }
+                        }
+                    }
+                    svg {
+                        path {
+                            color: #fff;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                }
+                .profile-image-item {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50px;
+                    border: 2px solid #fff;
+                    overflow: hidden;
+                    flex: 0 0 100px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .user-description {
+                text-align: center;
+                color: #fff;
+                h4 {
+                    color: #999;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
