@@ -1,10 +1,9 @@
 .side-menu {
     width: 220px;
     background: #33414e;
-    height: 100vh;
     position: fixed;
     top: 0;
-    // change on RTL
+    bottom: 0;
     right: 0;
     h2 {
         color: #fff;
@@ -74,6 +73,7 @@
         .menu-navigation-list {
             .menu-items {
                 .menu-item {
+                    border-bottom: 1px solid #2f3c48;
                     a {
                         display: inline-block;
                         width: 100%;

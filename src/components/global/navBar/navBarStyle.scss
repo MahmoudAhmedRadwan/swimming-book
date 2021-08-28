@@ -1,17 +1,70 @@
 .navBar{
     height: 50px;
     background: #33414e;
-    width: 100%;
+    width: calc(100% - 220px);
     display: flex;
     align-items: center;
     padding: 20px;
-
+    text-align: left;
+    margin: auto auto 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     // menu icone
-    .openMenu{
-        .openMenuIcone{
-            color: #FFF;
-            font-size: 30px;
-            cursor: pointer;
-        }   
+    .Side{
+        display: flex;
+        align-items: center;
+
+        // start right side of the menu
+        .openMenu{
+            .openMenuIcone{
+                color: #FFF;
+                font-size: 30px;
+                cursor: pointer;
+            }   
+        }
+        .golpalSearch{
+            position: relative;
+            input{
+                width: 100px;
+                height: 30px;
+                padding: 0px 8px 0px 28px;
+                margin: 0 20px;
+                line-height: 25px;
+                border: 1px solid #29343f;
+                background: #2d3945;
+                color: #AAA;
+                -webkit-transition: all 200ms ease;
+                -moz-transition: all 200ms ease;
+                -ms-transition: all 200ms ease;
+                -o-transition: all 200ms ease;
+                transition: all 200ms ease;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+            }
+            input:focus{
+                width: 200px;
+            }
+            .searchIcone{
+                position: absolute;
+                top: 7px;
+                right: 76px;
+                color: #ffffff9e;
+            }
+        }
+
+        // start left side of the menu
+        .webSite-action,
+        .webSite-comments,
+        .webSite-tasks{
+            margin: 0 10px;
+            .webSite-action-icone,
+            .comments-icone,
+            .tasks-icone{
+                color: #FFF;
+            }
+        }
     }
+    
 }
