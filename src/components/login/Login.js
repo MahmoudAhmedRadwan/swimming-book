@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Login.scss';
+import ForgetPassword from '../ForgetPassword/ForgetPassword';
 
 class Login extends React.Component {
     render(){
@@ -14,7 +16,7 @@ class Login extends React.Component {
                             <input type="passowrd" placeholder="Passowrd" />
                             <div className="logIn_footer">
                                 <button className="logIn_Btn">Log In</button>
-                                <a href="Forget-Passowrd">?Forget Your Passowrd</a>
+                                <Link to="/ForgetPassword" >?Forget Your Passowrd</Link>
                             </div>
                         </div>
                         <div className="webSite_links">
