@@ -6,3 +6,12 @@
   font-family: 'Open Sans', sans-serif;
   outline: none;
 }
+
+/* custom class */
+
+/* container class when the menu is open */
+.appMinWidth{
+  width: calc(100% - 220px);
+  float: left;
+  padding: 50px;
+}

@@ -1,0 +1,93 @@
+.login-page-full-width{
+    height: calc(100vh);
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: #36434F;
+    margin-top: -50px;
+}
+.login-page{
+    .log-in_container{
+        margin: 0 auto 0 auto;
+        width: 400px;
+        padding-top: 180px;
+        > h3{
+            color: #FFF;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logIn_body{
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            
+            p{
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                span{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: rgba(255, 255, 255, 0.644);
+                }
+            }
+            input{
+                display: block;
+                border-radius: 4px;
+                padding: 5px 10px;
+                border: 0px;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 10px 15px;
+                color: #CCC;
+                line-height: 20px;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            .logIn_footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    color: #FFF;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                .logIn_Btn{
+                    background-color: #29b2e1;
+                    border: 2px solid #29b2e1;
+                    color: #FFF;
+                    font-size: 14px;
+                    font-weight: 500;
+                    display: block;
+                    width: 170px;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    transition: .3s ease-in-out;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .webSite_links{
+            display: flex;
+            a{
+                border-left: 1px solid #FFF;
+                font-size: 12px;
+                margin-top: 10px;
+                font-weight: 500;
+                color: #FFF;
+                padding: 0 5px;
+                display: block;
+                text-decoration: none;
+            }
+            a:last-child{
+                border-left: 0;
+            }
+        }
+
+    }
+}
