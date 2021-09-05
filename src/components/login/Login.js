@@ -1,10 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import { Link, useHistory} from 'react-router-dom';
 import './Login.scss';
 import ForgetPassword from '../ForgetPassword/ForgetPassword';
+function Login () {
+    const [loginErr, setLoginErr] = useState(false);
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    
+    const history = useHistory();
+    const handelSubmit = (e) => {
+        e.preventDefault();
+        if (username === 'admin' && password === '123456') {
+            history.push("/")
+        } else {
+            setLoginErr(true)
+        }
+      }
 
-class Login extends React.Component {
-    render(){
         return(
             <div className="login-page-full-width">
                 <div className="login-page">
@@ -12,10 +24,11 @@ class Login extends React.Component {
                         <h3>Swimming</h3>
                         <div className="logIn_body">
                             <p> Please log in <span>Welcome</span></p>
-                            <input type="text" placeholder="User name" />
-                            <input type="passowrd" placeholder="Passowrd" />
+                            <input type="text" placeholder="User name" value={username} onChange={(e) => setUsername(e.target.value)} />
+                            <input type="password" placeholder="Passowrd" value={password} onChange={(e) =>setPassword(e.target.value)} />
+                            {loginErr && <div className="login-err">Incorrect username or password</div> }
                             <div className="logIn_footer">
-                                <button className="logIn_Btn">Log In</button>
+                                <button className="logIn_Btn" onClick={handelSubmit}>Log In</button>
                                 <Link to="/ForgetPassword" >?Forget Your Passowrd</Link>
                             </div>
                         </div>
@@ -28,7 +41,7 @@ class Login extends React.Component {
                 </div>
             </div>
         )
-    }
+
 }
 
 export default Login;
